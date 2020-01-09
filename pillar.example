@@ -1,0 +1,13 @@
+filebeat:
+  repo: 7.x
+  version: 7.5.1
+  hold: True
+  restart: True
+  enable: True
+  config:
+    outout.logstash:
+  modules:
+    elasticsearch:
+      filename: elasticsearch
+      config:
+        thing: thing1
